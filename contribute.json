@@ -1,0 +1,22 @@
+{
+  "name": "mdn.dev",
+  "description": "The home of mdn.dev",
+  "repository": {
+    "url": "https://github.com/mdn/mdn.dev",
+    "license": "MPL-2.0"
+  },
+  "participate": {
+    "home": "https://github.com/mdn/mdn.dev",
+    "docs": "https://github.com/mdn/mdn.dev",
+    "irc": "irc://irc.mozilla.org/#mdndev",
+    "irc-contacts": ["espressive", "jwhitlock", "rjohnson", "djf"]
+  },
+  "bugs": {
+    "list": "https://github.com/mdn/mdn.dev/issues",
+    "report": "https://github.com/mdn/mdn.dev/issues/new"
+  },
+  "urls": {
+    "prod": "https://mdn.dev"
+  },
+  "keywords": ["reactjs", "javascript", "sass", "webpack", "html"]
+}

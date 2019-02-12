@@ -1,0 +1,77 @@
+footer {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  padding: 60px 40px;
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 60px 80px;
+  }
+
+  a:link,
+  a:visited {
+    color: #83d0f2;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 2;
+  }
+
+  .footer-group {
+    flex-basis: 50%;
+  }
+
+  .footer-title {
+    margin-top: 0;
+  }
+
+  .footer-social {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .legal {
+    margin-top: 20px;
+
+    li {
+      display: inline;
+
+      a {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .icon {
+    fill: currentColor;
+  }
+
+  .nav-footer-logo {
+    display: block;
+    background: transparent url("../media/mdn-logo-white.svg") 0 0 no-repeat;
+    background-size: 100% auto;
+    width: 219px;
+    height: 48px;
+    text-indent: -9999px;
+    overflow: hidden;
+    direction: ltr;
+  }
+}

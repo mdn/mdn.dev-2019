@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "@babel/react",
+    "@babel/preset-flow",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": "last 2 versions"
+        },
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

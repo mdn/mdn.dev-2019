@@ -1,0 +1,48 @@
+.home-hero {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: relative;
+  background: #83d0f2 url("../media/hero-background.svg") 0 0 no-repeat;
+  padding: 24px;
+  min-height: 444px;
+  text-align: center;
+
+  &:before {
+    display: none;
+
+    @media screen and (min-width: 420px) {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 40%;
+      display: block;
+      content: "";
+      background: transparent url("../media/hero-dino.png") 0 0 no-repeat;
+      background-size: auto 200px;
+      width: 246px;
+      height: 200px;
+      z-index: 1;
+    }
+  }
+
+  h2,
+  p {
+    align-self: center;
+    z-index: 2;
+  }
+
+  h2 {
+    background-color: #222;
+    color: #fff;
+    @include set-heading-font-family();
+    @include set-font-size($h1-font-size);
+    max-width: 660px;
+  }
+
+  p {
+    max-width: 860px;
+    @include use-zillaslab();
+    @include set-font-size($large-paragraph-text);
+  }
+}

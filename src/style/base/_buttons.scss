@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  background-color: #83d0f2;
+  color: #222;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  @include set-font-size(21px);
+  font-weight: bold;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken(#83d0f2, 50%);
+    color: #fff;
+    text-decoration: none;
+  }
+}

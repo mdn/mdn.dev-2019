@@ -1,0 +1,37 @@
+.general-content-wrapper {
+  display: block;
+  margin: 80px auto;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .col-6 {
+    margin: 0 auto;
+    width: 90%;
+
+    @media screen and (min-width: 1024px) {
+      flex-basis: 40%;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+  }
+
+  ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+  h2 {
+    background-color: #222;
+    color: #fff;
+    @include set-heading-font-family();
+    @include set-font-size($h1-font-size);
+    padding-left: 20px;
+    max-width: 270px;
+  }
+}

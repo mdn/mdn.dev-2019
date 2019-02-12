@@ -1,0 +1,32 @@
+.mdn-contact {
+  background-color: #83d0f2;
+  color: #222;
+  padding: 40px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 60px 80px;
+  }
+
+  h2 {
+    background-color: #222;
+    color: #fff;
+    @include set-heading-font-family();
+    @include set-font-size($h1-font-size);
+    padding-left: 20px;
+    max-width: 270px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 20px;
+
+    @media screen and (min-width: 420px) {
+      padding: 20px 40px;
+    }
+  }
+
+  a {
+    color: darken($link-color, 50%);
+    text-decoration: underline;
+  }
+}

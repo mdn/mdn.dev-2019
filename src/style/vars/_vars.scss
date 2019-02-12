@@ -1,0 +1,19 @@
+/*
+typography
+====================================================================== */
+$site-font-family-fallback: x-locale-body, sans-serif;
+$site-font-family: "Arial", $site-font-family-fallback;
+
+$heading-font-family-fallback: "Palatino", "Palatino Linotype",
+  x-locale-heading-secondary, serif;
+$heading-font-family: ZillaSlab, $heading-font-family-fallback;
+
+$zillaslab-font-family-fallback: "Palatino", "Palatino Linotype",
+  x-locale-heading-secondary, serif;
+$zillaslab-font-family: ZillaSlab, $heading-font-family-fallback;
+
+$h1-font-size: 42px;
+$base-font-size: 18px;
+$large-paragraph-text: 24px;
+
+$link-color: #3d7e9a;

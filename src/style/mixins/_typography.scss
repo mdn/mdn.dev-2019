@@ -1,0 +1,39 @@
+@function -remify($value) {
+  $u: unit($value);
+  $v: 0;
+
+  @if $u == "px" {
+    $v: $value/$base-font-size * 1rem;
+  } @else {
+    $v: unit($value, u);
+  }
+
+  @return $v;
+}
+
+@mixin set-font-size($value) {
+  font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration
+
+  @if ($value != "inherit") {
+    // make sure we're working with px otherwise remify will just spit out what we spat out before
+    $u: unit($value);
+    @if $u == "px" {
+      font-size: -remify($value);
+    }
+  }
+}
+
+@mixin set-site-font-family() {
+  font-family: $site-font-family;
+  letter-spacing: -remify(-0.05px);
+}
+
+@mixin set-heading-font-family() {
+  font-family: $heading-font-family;
+  letter-spacing: -remify(-0.05px);
+}
+
+@mixin use-zillaslab() {
+  font-family: $zillaslab-font-family;
+  letter-spacing: -remify(-0.05px);
+}

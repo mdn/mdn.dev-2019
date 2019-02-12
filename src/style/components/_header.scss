@@ -1,0 +1,19 @@
+header {
+  border-top: 5px solid #83d0f2;
+}
+
+.mdn-logo {
+  display: block;
+  background: #fff url("../media/mdn-logo-black.svg") 0 0 no-repeat;
+  background-size: 100% auto;
+  margin-left: 40px;
+  width: 219px;
+  height: 48px;
+  text-indent: -9999px;
+  overflow: hidden;
+  direction: ltr;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 80px;
+  }
+}

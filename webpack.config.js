@@ -44,7 +44,6 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
           }
         ]
       },
-      entry: ["./src/App.js"],
       plugins: [
         new HTMLWebpackPlugin({
           title: "mdn.dev",

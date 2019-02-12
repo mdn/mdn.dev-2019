@@ -6,16 +6,41 @@ const SectionContent = () => {
       <h2>Content</h2>
       <p>Professional web technology references and guides:</p>
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>WebAPI</li>
-        <li>HTTP</li>
         <li>
-          Learn Web Development — structured learning material for beginners
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
         </li>
-        <li>WebExtension references and tutorials</li>
-        <li>Firefox Developer tools guides</li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            JavaScript
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API">WebAPI</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn">
+            Learn Web Development
+          </a>{" "}
+          — structured learning material for beginners
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">
+            WebExtension
+          </a>{" "}
+          references and tutorials
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Tools">
+            Firefox Developer tools
+          </a>{" "}
+          guides
+        </li>
       </ul>
     </section>
   );

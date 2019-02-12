@@ -1,5 +1,3 @@
-const webpack = require("webpack");
-
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const webpackMerge = require("webpack-merge");
 
@@ -46,15 +44,8 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
           }
         ]
       },
-      entry: [
-        "react-hot-loader/patch",
-        "webpack-dev-server/client?http://localhost:8080",
-        "webpack/hot/only-dev-server",
-        "./src/App.js"
-      ],
+      entry: ["./src/App.js"],
       plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NamedModulesPlugin(),
         new HTMLWebpackPlugin({
           title: "mdn.dev",
           template: "./src/tmpl/index.html"

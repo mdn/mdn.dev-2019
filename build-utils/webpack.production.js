@@ -1,4 +1,5 @@
 const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = () => ({
@@ -19,5 +20,8 @@ module.exports = () => ({
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin()]
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new CopyWebpackPlugin([{ from: "./src/media/favicon144.png" }])
+  ]
 });

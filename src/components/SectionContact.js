@@ -3,7 +3,7 @@ import React from "react";
 const SectionContact = () => {
   return (
     <section className="mdn-contact">
-      <h2>Get in contact</h2>
+      <h2>Get in touch</h2>
       <p>
         If you have any questions about anything, you can contact us in one of
         the following ways:

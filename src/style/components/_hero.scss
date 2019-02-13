@@ -37,12 +37,18 @@
     color: #fff;
     @include set-heading-font-family();
     @include set-font-size($h1-font-size);
-    max-width: 660px;
+    max-width: 700px;
+    padding: 0 10px;
   }
 
   p {
     max-width: 860px;
     @include use-zillaslab();
     @include set-font-size($large-paragraph-text);
+
+    a {
+        font-weight: bold;
+        color: #222;
+    }
   }
 }

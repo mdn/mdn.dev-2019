@@ -108,13 +108,17 @@ header {
     letter-spacing: -0.00278rem;
     font-size: 42px;
     font-size: 2.33333rem;
-    max-width: 660px; }
+    max-width: 700px;
+    padding: 0 10px; }
   .home-hero p {
     max-width: 860px;
     font-family: ZillaSlab, "Palatino", "Palatino Linotype", x-locale-heading-secondary, serif;
     letter-spacing: -0.00278rem;
     font-size: 24px;
     font-size: 1.33333rem; }
+    .home-hero p a {
+      font-weight: bold;
+      color: #222; }
 
 .general-content-wrapper {
   display: block;

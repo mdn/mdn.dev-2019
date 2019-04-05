@@ -5,7 +5,7 @@ set -eo pipefail
 # BRANCH_NAME, BUILD_NUMBER
 
 # defaults and constants
-NICK="examplesbot"
+NICK="mdn.devbot"
 CHANNEL="#mdndev"
 SERVER="irc.mozilla.org:6697"
 # colors and styles: values from the following links

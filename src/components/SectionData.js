@@ -34,7 +34,7 @@ const SectionData = () => {
             interactive-examples
           </a>{" "}
           — this contains HTML, CSS, and JavaScript code examples, which along
-          with the <a href="(https://github.com/mdn/bob">BoB renderer</a> are
+          with the <a href="https://github.com/mdn/bob">BoB renderer</a> are
           used to generate the interactive examples seen at the top of HTML,
           CSS, and JavaScript reference pages. So for example:
           <ul>
